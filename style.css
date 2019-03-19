@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    padding: 102px 0;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.frame{
+    position: relative;
+    width: 32%;
+    margin: 0.66%;
+    height: 400px;
+    float: left;
+    background-color: white;
+    box-shadow: 1px 2px 2px 2px grey;
+    z-index: 0;
+    text-align: center;
+}
+
+.frame:hover{
+    background-color: lightblue;
+    transition: all 0.5s;
+}
+#btn{
+    position: fixed;
+    right: 20px;
+    height: 100px;
+    margin-right: 20px;
+    background-color: lightblue;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 1.2em;
+    padding: 2px;
+}
+#btn:hover{
+    background-color: green;
+    transition: all 0.5s;
+}
+#nav{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.sidedrawer{
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    background: silver;
+    transform: translateX(-100%);
+    transition: all ease-out 1s;
+    z-index: 500;
+    box-shadow: 1px 2px 2px 2px grey;
+      
+}
+.show {
+    transform: translateX(0);
+    transition: all ease-out 1s;
+}
+#btn {
+    
+    z-index: 300;
+}
+.sidedrawer ul {
+    list-style: none;
+    font-size: 4em;
+    text-align: center;
+}
+.sidedrawer ul li {
+    margin-top: 50px;
+}
+
+.sidedrawer ul li:hover{
+    background-color: green;
+    transition: all 0.2s
+}
+.backDrop{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 200;
+}
+
+.modal{
+    padding: 15px;
+    font-size: 1.5em;
+    background-color: lightgoldenrodyellow;
+    transform: translate(75%,-105%);
+    width: 40%;
+    height: 30%;
+    position: fixed;
+    z-index: 400;
+    box-shadow: 2px 2px 2px 2px grey;
+    transition: all ease-out 1s;
+}
+.modal h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sModal{
+    transform: translate(75%,100%);
+    transition: all ease-out 0.5s;
+}
+.x{
+    border: 1px solid gray;
+    top: 0;
+    right: 0;
+    position: absolute;   
+    color:black;
+    padding: 5%;
+}
+.modal p {
+    margin-top: 10px;
+}
+.x:hover{
+    background: red;
+}
